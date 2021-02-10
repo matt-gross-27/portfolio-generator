@@ -58,6 +58,11 @@ Add a New Project
         choices: ['HTML', 'CSS', 'Bootstrap', 'Foundation', 'JavaScript', 'ES6', 'jQuery', 'Moment', 'Node']
       },
       {
+        type: 'input',
+        name: 'link',
+        message: 'Enter the Github link to your project. (Required)'
+      },
+      {
         type: 'confirm',
         name: 'feature',
         message: 'Would you like to feature this project?',
@@ -86,3 +91,5 @@ promptUser()
   .then(portfolioData => {
     console.log(portfolioData);
   });
+
+  
