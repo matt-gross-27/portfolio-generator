@@ -24,10 +24,13 @@ const generateProjects = projectsArr => {
             <h5 class="portfolio-languages">
               Built With:
               ${languages.join(', ')}
+              <br/><br/>
             <h/5>
             <p>${description}</p>
-            <a href="${linkSite}" class="btn mt-auto"><i class="fas fa-globe-americas"></i>View Web Application</a>
-            <a href="${linkRepo}" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+            <div class="flex-row mt-auto justify-space-between">
+              <a href="${linkSite}" class="btn col-12 col-lg-6"><i class="fas fa-globe-americas"></i>View Web Application</a>
+              <a href="${linkRepo}" class="btn col-12 col-lg-6"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+            </div>
           </div>
           `;
         })
@@ -42,10 +45,13 @@ const generateProjects = projectsArr => {
               <h5 class="portfolio-languages">
                 Built With:
                 ${languages.join(', ')}
+                <br/><br/>
               <h/5>
               <p>${description}</p>
-              <a href="${linkSite}" class="btn mt-auto"><i class="fas fa-globe-americas"></i>View Web Application</a>
-              <a href="${linkRepo}" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+              <div class="flex-row mt-auto">
+                <a href="${linkSite}" class="btn col-12"><i class="fas fa-globe-americas"></i>View Web Application</a>
+                <a href="${linkRepo}" class="btn col-12"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+              </div>
             </div>
             `;
           })
